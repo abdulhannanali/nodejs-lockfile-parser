@@ -49,7 +49,7 @@ export class PackageLockParser extends LockParserBase {
       return packageLock;
     } catch (e) {
       throw new InvalidUserInputError(
-        'package-lock.json parsing failed with ' + `error ${e.message}`,
+        `package-lock.json parsing failed with error ${e}`,
       );
     }
   }
